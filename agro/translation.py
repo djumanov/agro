@@ -3,10 +3,10 @@ from .models import FruitType, Fruit
 
 
 class FruitTypeTranslationOptions(TranslationOptions):
-    fields = ('name', 'description',)  # Ko‘p tillik maydonlar
+    fields = ('name', 'description',)
 
 class FruitTranslationOptions(TranslationOptions):
-    fields = ('description',)  # Ko‘p tillik maydonlar
+    fields = ('description',)
 
 translator.register(FruitType, FruitTypeTranslationOptions)
 translator.register(Fruit, FruitTranslationOptions)
